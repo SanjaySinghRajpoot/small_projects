@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="pw-container">
+      <div class="pw-header">
+        <div class="pw" id="pw">
+          <span id="pw">l823Zs78#Css09@</span>
+        </div>
+        <button id="copy">Copy</button>
+      </div>
+
+      <div class="pw-body">
+        <div class="form-control">
+          <label for="length">Password length</label>
+          <input id="length" type="number" min="6" max="20" />
+        </div>
+
+        <div class="form-control">
+          <label for="upper">Conatin Upper Case letters</label>
+          <input id="upper" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="lower">Conatin lower Case letters</label>
+          <input id="lower" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="number">Conatin numbers</label>
+          <input id="number" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="symbol">Conatin Symbole</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+         <button class = "generate" id="generate">Generate Password</button>
+      </div>
+    </div>
+  </body>
+</html>
