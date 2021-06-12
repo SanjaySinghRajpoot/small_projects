@@ -53,16 +53,16 @@ function addMovies(movies) {
         </div>
     </div>
 </div>
-  
     `;
 
     main.appendChild(notFound);
   }
 
   movies.forEach((movie) => {
-    const { poster_path, overview,title, vote_average } = movie;
+    const { poster_path, overview, title, vote_average } = movie;
 
     if (poster_path == null) {
+      // to remove those movies from the list in which poster is not available 
     } else {
       const movieEl = document.createElement("div");
       movieEl.classList.add("movie");
