@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1c3a;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+.error-template {
+  padding: 100px 600px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.error-actions {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.error-actions .btn {
+  margin-right: 10px;
+  color: white;
+  background-color: white;
+}
+
+header {
+  background-color: #1e2043;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  /* margin: 20px; */
+  align-items: right;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  margin: 2rem;
+  background-color: #22254b;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  /* height: 400px; */
+  width: 300px;
+}
+
+.movie img {
+  object-fit: cover;
+  /* height: 400px; */
+  max-width: 100%;
+}
+
+.movie-info {
+  color: white;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info h3 {
+  margin: 8px;
+}
+
+.movie-info span {
+  background-color: #1a1c3a;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.movie-info span.green {
+  background-color: #1a1c3a;
+  color: rgb(176, 243, 75);
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.movie-info span.orange {
+  background-color: #1a1c3a;
+  color: rgb(250, 179, 48);
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.movie-info span.red {
+  background-color: #1a1c3a;
+  color: red;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    font-family: sans-serif;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
