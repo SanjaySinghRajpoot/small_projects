@@ -1,6 +1,7 @@
 const pwEl = document.getElementById("pw");
 const copyEl = document.getElementById("copy");
 const lenEl = document.getElementById("length");
+const stringEl = document.getElementById("string");
 const upperEl = document.getElementById("upper");
 const lowerEl = document.getElementById("lower");
 const numberEl = document.getElementById("number");
@@ -45,8 +46,12 @@ function generatePassword() {
     const x = generateX();
     password += x;
   }
+  
+ let val = stringEl.value;
+ let val2 = val.concat(password);
 
-  pwEl.innerText = password;
+
+   pwEl.innerText = val2;
 
 //   console.log('password', pwEl.innerText);
 
