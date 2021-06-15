@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css"/>
-    <title>Trending Movies</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <title>Movies Mania</title>
+  </head>
+  <body>
     <header>
-        <!-- form is used to submit the stuff and refresh the page -->
-        <form id="form">  
-            <input
-                type="text"
-                id="search"
-                placeholder="Search"
-                class="search"
-            />
-        </form>
+      <span id="titles"><b>Movies Mania</b></span>
+      <form id="form">
+        <input type="text" id="search" placeholder="Search" class="search" />
+      </form>
     </header>
-    <!-- <h1 id="title">Trending Movies</h1> -->
-    <main id="main">
-       
-    </main>
-    
-</body>
+    <br>
+    <label for="cars" id="dropDown">Catogires</label>
+
+       <select name="cars" id="cars">
+         <option value="Action">Action</option>
+         <option value="Animation">Animation</option>
+         <option value="Romantic">Romantic</option>
+         <option value="Crime">Crime Thriller</option>
+        </select>
+   
+      <main id="main"></main>
+  </body>
 </html>

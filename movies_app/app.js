@@ -4,6 +4,8 @@ const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI =
   "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
+const GEN_API = "";
+
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
@@ -62,7 +64,7 @@ function addMovies(movies) {
     const { poster_path, overview, title, vote_average } = movie;
 
     if (poster_path == null) {
-      // to remove those movies from the list in which poster is not available 
+      // to remove those movies from the list in which poster is not available
     } else {
       const movieEl = document.createElement("div");
       movieEl.classList.add("movie");
