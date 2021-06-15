@@ -30,31 +30,27 @@ function getSymbol() {
 }
 
 function generatePassword() {
-   
-    let len = 0;
+  let len = 0;
 
-    if(lenEl.value == null){
-        len = 6;
-    }else{
-       len = lenEl.value;
-    }
-
+  if (lenEl.value == null) {
+    len = 6;
+  } else {
+    len = lenEl.value;
+  }
 
   let password = "";
+  const val = stringEl.value;
+  const netlen = len - val; 
 
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < netlen; i++) {
     const x = generateX();
     password += x;
   }
+
   
- let val = stringEl.value;
- let val2 = val.concat(password);
+  let val2 = val.concat(password);
 
-
-   pwEl.innerText = val2;
-
-//   console.log('password', pwEl.innerText);
-
+  pwEl.innerText = val2;
 }
 
 function generateX() {
@@ -84,17 +80,17 @@ function generateX() {
 generateEl.addEventListener("click", generatePassword);
 
 copyEl.addEventListener("click", () => {
-    const textarea = document.createElement("textarea");
-    const password = pwEl.innerText;
+  const textarea = document.createElement("textarea");
+  const password = pwEl.innerText;
 
-    if (!password) {
-        return;
-    }
+  if (!password) {
+    return;
+  }
 
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    textarea.remove();
-    alert("Password copied to clipboard");
+  textarea.value = password;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+  alert("Password copied to clipboard");
 });
