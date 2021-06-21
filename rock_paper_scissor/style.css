@@ -105,3 +105,7 @@ header {
 #resultHuman{
     padding: 20px;
 }
+
+.reset_btn{
+    text-align: center;
+}

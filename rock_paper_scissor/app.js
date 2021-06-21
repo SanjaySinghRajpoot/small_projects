@@ -78,7 +78,6 @@ function game(userChoice) {
 
   if (machine == 2 && userChoice == 1) {
     lose();
-    resut_print.innerHTML = "  <p>You lose</p> ";
   }
 
   if (machine == 2 && userChoice == 3) {
