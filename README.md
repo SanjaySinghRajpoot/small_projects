@@ -13,4 +13,4 @@ All the apps are made with Vanilla Javascript, CSS and HTML NO external library 
 
 5. Rock Paper Scissors Game - Buttons to select the option, score board and result display.
 
-6.Movies App - display trending movies through API, serach movies feature added and categories option also included. 
+6. Movies App - display trending movies through API, serach movies feature added and categories option also included. 
