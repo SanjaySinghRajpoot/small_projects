@@ -9,6 +9,7 @@ const result_Div = document.querySelector(".result");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const reset_div = document.getElementById("reset");
 const resut_print = document.querySelector(".results");
 
 //  rock = 1
@@ -30,7 +31,7 @@ function win() {
 function lose() {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
-  resut_print.innerHTML ="  <p>You lose</p> ";
+  resut_print.innerHTML =" <p>You lose</p> ";
 
 }
 
@@ -42,6 +43,7 @@ function draw() {
   resut_print.innerHTML ="  <p>Draw</p> ";
 
 }
+
 
 function game(userChoice) {
   const machine = randomNumber();
@@ -122,6 +124,10 @@ function main() {
 
     src.innerHTML = ' <img src="assets/scissors.png">';
   });
+
+  reset_div.addEventListener("click", () => {
+      resetScore();
+  })
 }
 
 main();

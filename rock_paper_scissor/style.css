@@ -106,6 +106,14 @@ header {
     padding: 20px;
 }
 
-.reset_btn{
-    text-align: center;
+#reset{
+    color: white;
+    background-color: rgb(103, 103, 243);
+    border: none;
+    padding: 10px;
 }
+
+/* #resulti{
+    max-width: 100%;
+    height: auto;
+} */
