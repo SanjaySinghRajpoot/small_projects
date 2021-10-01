@@ -26,8 +26,8 @@ body {
   background-color: white;
 }
 
-span{
-  color:white;
+span {
+  color: white;
   position: relative;
   font-family: sans-serif;
   font-size: 28px;
@@ -35,7 +35,6 @@ span{
   font-weight: bolder;
   margin-top: 4px;
 }
-
 
 header {
   background-color: #1e2043;
@@ -54,11 +53,10 @@ header {
   color: #fff;
   font-family: sans-serif;
   font-size: 1rem;
-  position:static;
+  position: static;
   padding: 0.5rem 1rem;
   /* margin-top: 1rem; */
 }
-
 
 .search::placeholder {
   color: #7378c5;
@@ -134,25 +132,25 @@ main {
 }
 
 .overview {
-    background-color: #fff;
-    padding: 2rem;
-    font-family: sans-serif;
-    position: absolute;
-    max-height: 100%;
-    overflow: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
+  background-color: #fff;
+  padding: 2rem;
+  font-family: sans-serif;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
 }
 
 .overview h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .movie:hover .overview {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 label {
@@ -168,7 +166,7 @@ cars {
   color: #fff;
   font-family: sans-serif;
   font-size: 1rem;
-  position:static;
+  position: static;
   padding: 0.5rem 1rem;
 }
 
@@ -179,7 +177,23 @@ select {
   color: #7378c5;
   font-family: sans-serif;
   font-size: 15;
-  position:static;
+  position: static;
   padding: 0.5rem 1rem;
   background-color: transparent;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+#about {
+  color: rgb(158, 149, 149);
+  font-size: 19px;
+}
+#image {
+  width: 710px;
+  height: 645px;
+}
+h2 {
+  padding-left: 275px;
 }
