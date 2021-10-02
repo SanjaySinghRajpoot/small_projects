@@ -88,3 +88,6 @@ body {
     width: 100%;
     border-radius: 0.6rem;
 }
+.generate:hover{
+      background-color: #f3c018;
+}
