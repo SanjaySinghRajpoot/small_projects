@@ -34,13 +34,14 @@ function generatePassword() {
 
   if (lenEl.value == null) {
     len = 6;
-  } else {
-    len = lenEl.value;
+  }
+  else {
+    len = Number(lenEl.value);
   }
 
   let password = "";
   const val = stringEl.value;
-  const netlen = len - val; 
+  const netlen = len - val.length; 
 
   for (let i = 0; i < netlen; i++) {
     const x = generateX();
