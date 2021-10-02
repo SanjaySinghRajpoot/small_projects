@@ -30,36 +30,43 @@ function getSymbol() {
 }
 
 function generatePassword() {
-  let len = 0;
-
-  if (lenEl.value == null) {
-    len = 6;
-  } else {
-    len = lenEl.value;
+  if (lenEl.value!=='') {
+    
+    let len = 0;
+    
+    if (lenEl.value == null) {
+      len = 6;
+    }
+    else {
+    len = Number(lenEl.value);
   }
-
+  
   let password = "";
   const val = stringEl.value;
-  const netlen = len - val; 
-
+  const netlen = len - val.length; 
+  
   for (let i = 0; i < netlen; i++) {
     const x = generateX();
     password += x;
   }
-
+  
   
   let val2 = val.concat(password);
-
+  
   pwEl.innerText = val2;
+  }
+  else {
+    alert("Please, Provide the length of password");
+  }
 }
 
 function generateX() {
   const xs = [];
-
+  
   if (upperEl.checked) {
     xs.push(getUpperCase());
   }
-
+  
   if (lowerEl.checked) {
     xs.push(getLowerCase());
   }

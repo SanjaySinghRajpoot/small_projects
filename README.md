@@ -7,7 +7,7 @@ All the apps are made with Vanilla Javascript, CSS and HTML NO external library 
 
 2. Drawing App - A simple javascript canvas to draw stuff.
 
-3. Password Generator - A website to create random and secure passwords.
+3. [Password Generator](password_generator/readme.md) - A website to create random and secure passwords.
 
 4. Quiz App - List of questions appear on the screeen answer them and the result will be displayed at the end.
 
