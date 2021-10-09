@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Drawing App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css" />
         <script src="app.js" defer></script>
     </head>
@@ -16,7 +17,13 @@
             <span id="size">30</span>
             <button id="increase">+</button>
             <input type="color" id="color" />
-            <button id="clear">💩</button>
+            <button id="clear"><i class="fa fa-broom"></i></button>
+            <div class="shapes">
+                <button id="rect" onclick="rectangle();">Rectangle</button>
+                <button id="circle"  onclick="circleShape();">Circle</button>
+                <button id="pen"  onclick="Pen();"><i class="fa fa-pen"></i></button>
+                <button id="eraser"  onclick="Erase();"><i class="fa fa-eraser"></i></button>
+            </div>
         </div>
     </body>
 </html>

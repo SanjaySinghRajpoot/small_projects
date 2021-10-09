@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #eb8181;
+    background:linear-gradient(45deg, #460f7a, #77034b);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,20 +18,122 @@ body {
  
 /* comment added */
 canvas { 
-    border: 6px solid #111;
+    
     background-color: white;
-
+    border-radius: 15px 15px 0px 0px;
+    cursor:crosshair
 }
 
 .toolbox {
-    background-color: blue;
+    background:#1f1e1e;
     padding: 1rem;
-   width: 800px;   
+   width: 800px;  
+   position: relative;
+   border-radius: 0px 0px 20px 20px; 
 }
+
+
 
 .toolbox > * {
     font-size: 2rem;
     background-color: cornsilk;
     padding: 0.5rem;
     margin: 0.5rem;
+}
+
+
+ #decrease,  #increase
+{
+    width:50px;
+    height:50px;
+    padding:0px;
+    line-height: 50px;
+    background:#181717;
+    box-shadow: 0px 0px 8px 0px #000;
+    border-radius: 50%;
+    border:none;
+    outline:none;
+    color:#726e6e;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.toolbox #size
+{
+    background:transparent;
+    color:#fff;
+    font-size: 25px;
+    border-bottom: 3px solid rgb(87, 83, 83);
+}
+
+#color
+{
+    background:transparent;
+    border-radius: 10px;
+    border:1px solid #fff;
+    height:50px;
+    cursor:pointer;
+}
+
+#clear
+{
+    background:#181717;
+    color:#726e6e;
+    box-shadow: 0px 0px 10px 0px #000;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+
+}
+
+#decrease:hover,  #increase:hover,#clear:hover, #rect:hover, #circle:hover,#pen:hover, #eraser:hover
+{
+    box-shadow: none;
+}
+
+
+#rect, #circle, #pen, #eraser
+{
+    background:#181717;
+    color:#726e6e;
+    box-shadow: 0px 0px 10px 0px #242323;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    font-size: 15px;
+    padding:8px 20px;
+    width:100px;
+    height:50px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px 0px #000;
+
+
+}
+
+.shapes
+{
+    position: absolute;
+    width:350px;
+    top:0px;
+    right:0px;
+    text-align: center;
+    display: flex;
+    height:80%;
+    justify-content: space-around;
+    background-color: transparent;
+    
+}
+
+#rect
+{
+    margin-top: 5px;
+}
+#circle, #pen, #eraser
+{
+    width:60px;
+    height:60px;
+    padding:0px;
+    border-radius: 50%;
 }
